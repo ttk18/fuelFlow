@@ -26,7 +26,7 @@ try {
                                 <li class="breadcrumb-item active"></li>
                             </ol>
                         </div>
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title"><?php echo $lang['dashboard_page']['dashboard'] ?></h4>
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -52,7 +52,7 @@ try {
                                             <?PHP echo $record['cnt_name'];
                                             $name = $record['cnt_name']; ?>
                                         </h3>
-                                        <p class="mb-0 text-white">Total Fuels</p>
+                                        <p class="mb-0 text-white"><?php echo $lang['dashboard_page']['total_fuels'] ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ try {
                                             <?PHP echo $record['cnt_name'];
                                             $name = $record['cnt_name']; ?>
                                         </h3>
-                                        <p class="mb-0 text-white">Total Supplier</p>
+                                        <p class="mb-0 text-white"><?php echo $lang['dashboard_page']['total_supplier'] ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +115,7 @@ try {
                                             <?PHP echo $record['cnt_name'];
                                             $name = $record['cnt_name']; ?>
                                         </h3>
-                                        <p class="mb-0 text-white">Total Invoices</p>
+                                        <p class="mb-0 text-white"><?php echo $lang['dashboard_page']['total_invoices'] ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +147,7 @@ try {
                                             <?PHP echo $record['cnt_name'];
                                             $name = $record['cnt_name']; ?>
                                         </h3>
-                                        <p class="mb-0 text-white">Total Customers</p>
+                                        <p class="mb-0 text-white"><?php echo $lang['dashboard_page']['total_customers'] ?></p>
                                     </div>
                                 </div>
 
@@ -175,7 +175,7 @@ try {
             <div class="col-sm-8">
                 <div class="card">
                     <div class="card-body">
-                        <h3>Today's Billing</h3>
+                        <h3><?php echo $lang['dashboard_page']['today\'s_billing'] ?></h3>
                         <br>
                         <div class="table-responsive">
 
@@ -185,13 +185,13 @@ try {
                                 <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Build Date</th>
-                                    <th>Invoice No.</th>
-                                    <th>Customer No.</th>
-                                    <th>Customer Name</th>
-                                    <th>Email</th>
-                                    <th>Address</th>
-                                    <th>Total</th>
+                                    <th><?php echo $lang['dashboard_page']['build_date'] ?></th>
+                                    <th><?php echo $lang['dashboard_page']['invoice_no'] ?></th>
+                                    <th><?php echo $lang['dashboard_page']['customer_no'] ?></th>
+                                    <th><?php echo $lang['dashboard_page']['customer_name'] ?></th>
+                                    <th><?php echo $lang['dashboard_page']['email'] ?></th>
+                                    <th><?php echo $lang['dashboard_page']['address'] ?></th>
+                                    <th><?php echo $lang['dashboard_page']['total'] ?></th>
 
                                 </tr>
                                 </thead>

@@ -52,7 +52,9 @@ return array(
             "supplier_phone" => "Supplier Phone",
             "supplier_address" => "Supplier Address",
             "select" => "SELECT",
-            "submit" => "Submit"
+            "submit" => "Submit",
+            "inactive" => "Inactive",
+            "active" => "Active"
         ),
         "manage_supplier_page" => array(
             "view_supplier" => "View Supplier",

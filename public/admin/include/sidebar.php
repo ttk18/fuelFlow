@@ -122,56 +122,56 @@ as $key1) { ?>
                                         class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="list-unstyled">
                             <li><a href="add_supplier.php"><?php  echo $lang['sidebar_menu']['add_supplier']; ?></a></li>
-                            <li><a href="manage_supplier.php">Manage Supplier</a></li>
-                            <li><a href="import_supplier.php">Import Supplier</a></li>
+                            <li><a href="manage_supplier.php"><?php  echo $lang['sidebar_menu']['manage_supplier']; ?></a></li>
+                            <li><a href="import_supplier.php"><?php  echo $lang['sidebar_menu']['import_supplier']; ?></a></li>
                         </ul>
                     </li>
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect">
-                            <i class="fa fa-list"></i> <span>Categories</span> <span class="float-right"><i
+                            <i class="fa fa-list"></i> <span><?php  echo $lang['sidebar_menu']['categories']; ?></span> <span class="float-right"><i
                                         class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="list-unstyled">
-                            <li><a href="add_categories.php">Add Categories</a></li>
-                            <li><a href="manage_categories.php">Manage Categories</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="has_sub">
-                        <a href="javascript:void(0);" class="waves-effect">
-                            <i class="fa fa-user"></i> <span>Customer</span> <span class="float-right"><i
-                                        class="mdi mdi-chevron-right"></i></span></a>
-                        <ul class="list-unstyled">
-                            <li><a href="add_customer.php">Add Customer</a></li>
-                            <li><a href="manage_customer.php">Manage Customer</a></li>
+                            <li><a href="add_categories.php"><?php  echo $lang['sidebar_menu']['add_categories']; ?></a></li>
+                            <li><a href="manage_categories.php"><?php  echo $lang['sidebar_menu']['manage_categories']; ?></a></li>
                         </ul>
                     </li>
 
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect">
-                            <i class="fas fa-gas-pump"></i> <span>Fuels</span> <span class="float-right"><i
+                            <i class="fa fa-user"></i> <span><?php  echo $lang['sidebar_menu']['customer']; ?></span> <span class="float-right"><i
                                         class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="list-unstyled">
-                            <li><a href="add_fuel.php">Add Fuel</a></li>
-                            <li><a href="manage_fuel.php">Manage Fuel</a></li>
+                            <li><a href="add_customer.php"><?php  echo $lang['sidebar_menu']['add_customer']; ?></a></li>
+                            <li><a href="manage_customer.php"><?php  echo $lang['sidebar_menu']['manage_customer']; ?></a></li>
                         </ul>
                     </li>
 
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect">
-                            <i class="fa fa-file-invoice"></i> <span>Invoices</span> <span class="float-right"><i
+                            <i class="fas fa-gas-pump"></i> <span><?php  echo $lang['sidebar_menu']['fuels']; ?></span> <span class="float-right"><i
                                         class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="list-unstyled">
-                            <li><a href="add_invoices.php">Add Invoices</a></li>
-                            <li><a href="manage_invoices.php">Manage Invoices</a></li>
+                            <li><a href="add_fuel.php"><?php  echo $lang['sidebar_menu']['add_fuel']; ?></a></li>
+                            <li><a href="manage_fuel.php"><?php  echo $lang['sidebar_menu']['manage_fuel']; ?></a></li>
                         </ul>
                     </li>
 
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect">
-                            <i class="fa fa fa-flag"></i> <span>Reports</span> <span class="float-right"><i
+                            <i class="fa fa-file-invoice"></i> <span><?php  echo $lang['sidebar_menu']['invoices']; ?></span> <span class="float-right"><i
                                         class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="list-unstyled">
-                            <li><a href="add_sales.php">Order Report</a></li>
+                            <li><a href="add_invoices.php"><?php  echo $lang['sidebar_menu']['add_invoices']; ?></a></li>
+                            <li><a href="manage_invoices.php"><?php  echo $lang['sidebar_menu']['manage_invoices']; ?></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect">
+                            <i class="fa fa fa-flag"></i> <span><?php  echo $lang['sidebar_menu']['reports']; ?></span> <span class="float-right"><i
+                                        class="mdi mdi-chevron-right"></i></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="add_sales.php"><?php  echo $lang['sidebar_menu']['order_report']; ?></a></li>
 
                         </ul>
                     </li>
