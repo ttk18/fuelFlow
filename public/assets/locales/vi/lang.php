@@ -1,5 +1,6 @@
 <?php
 return array(
+
     "header" => array(
         "welcome" => "Xin chào",
         "profile" => "Trang cá nhân",
@@ -38,7 +39,7 @@ return array(
         "total_customers" => "Tổng khách hàng",
         "today's_billing" => "Hóa đơn hôm nay",
         "fuel_opening_stock" => "Tồn kho nhiên liệu ban đầu",
-        "build_date" => "Ngày xây dựng",
+        "build_date" => "Ngày tạo",
         "invoice_no" => "Số hóa đơn",
         "customer_no" => "Số khách hàng",
         "customer_name" => "Tên khách hàng",
@@ -77,6 +78,7 @@ return array(
         "import_supplier_page" => array(
             "import_supplier_management" => "Nhập quản lý nhà cung cấp",
             "import_supplier" => "Nhập nhà cung cấp",
+            "home" => "Trang chủ",
             "import_supplier_file" => "Nhập tệp nhà cung cấp",
             "import" => "Nhập"
         )
@@ -86,6 +88,7 @@ return array(
             "add_categories_management" => "Thêm quản lý danh mục",
             "home" => "Trang chủ",
             "add_categories" => "Thêm danh mục",
+
             "categories_name" => "Tên danh mục",
             "submit" => "Gửi"
         ),
@@ -227,4 +230,3 @@ return array(
     )
 );
 
-?>

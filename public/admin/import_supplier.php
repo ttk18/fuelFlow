@@ -18,13 +18,13 @@ try {
         <div class="row tittle">
 
             <div class="top col-md-5 align-self-center">
-                <h5>Import Supplier Management</h5>
+                <h5><?php  echo $lang['supplier_page']['import_supplier_page']['import_supplier'] ?></h5>
             </div>
 
             <div class="col-md-7  align-self-center">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                    <li class="breadcrumb-item active">Import Supplier</li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)"><?php  echo $lang['supplier_page']['import_supplier_page']['home'] ?></a></li>
+                    <li class="breadcrumb-item active"><?php  echo $lang['supplier_page']['import_supplier_page']['import_supplier'] ?></li>
                 </ol>
             </div>
         </div>
@@ -43,7 +43,7 @@ try {
 
                                         <div class="form-group">
                                             <div class="row">
-                                                <label class="col-sm-3 control-label">Import Supplier File</label>
+                                                <label class="col-sm-3 control-label"><?php  echo $lang['supplier_page']['import_supplier_page']['import_supplier_file'] ?></label>
                                                 <div class="col-sm-9">
                                                     <input type="FIle" class="form-control" id="brandName"
                                                            placeholder="supplier Name" name="brandName">
@@ -55,7 +55,7 @@ try {
                                         <div class="form-group col-md-12">
 
                                             <button class="btn btn-success" type="submit" name="submit"
-                                                    onclick="addService()">Import
+                                                    onclick="addService()"><?php  echo $lang['supplier_page']['import_supplier_page']['import'] ?>
                                             </button>
 
                                         </div>

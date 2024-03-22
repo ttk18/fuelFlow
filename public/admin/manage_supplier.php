@@ -20,13 +20,13 @@ try {
   <div class="row tittle">
 
     <div class="top col-md-5 align-self-center">
-      <h5>View Supplier</h5>
+      <h5><?php echo $lang['supplier_page']['manage_supplier_page']['view_supplier'] ?></h5>
     </div>
 
     <div class="col-md-7  align-self-center">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-        <li class="breadcrumb-item active">View Supplier</li>
+        <li class="breadcrumb-item"><a href="javascript:void(0)"><?php echo $lang['supplier_page']['manage_supplier_page']['home'] ?></a></li>
+        <li class="breadcrumb-item active"><?php echo $lang['supplier_page']['manage_supplier_page']['view_supplier'] ?></li>
       </ol>
     </div>
   </div>
@@ -43,7 +43,7 @@ try {
         <div class="card">
           <div class="card-body">
             <div class="btn-group float-left">
-              <a href="add_supplier.php" class="btn btn-primary mb-3">Add Supplier</a>
+              <a href="add_supplier.php" class="btn btn-primary mb-3"><?php echo $lang['supplier_page']['manage_supplier_page']['add_supplier'] ?></a>
             </div>
 
             <div class="table-responsive">
@@ -51,13 +51,13 @@ try {
               <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;" enctype="multipart/form-data">
                 <thead>
                   <tr>
-                    <th>Serial</th>
-                    <th>Supplier Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Status</th>
-                    <th>Action</th>
+                      <th><?php echo $lang['supplier_page']['manage_supplier_page']['serial'] ?></th>
+                      <th><?php echo $lang['supplier_page']['manage_supplier_page']['supplier_name'] ?></th>
+                      <th><?php echo $lang['supplier_page']['manage_supplier_page']['email'] ?></th>
+                      <th><?php echo $lang['supplier_page']['manage_supplier_page']['phone'] ?></th>
+                      <th><?php echo $lang['supplier_page']['manage_supplier_page']['address'] ?></th>
+                      <th><?php echo $lang['supplier_page']['manage_supplier_page']['status'] ?></th>
+                      <th><?php echo $lang['supplier_page']['manage_supplier_page']['action'] ?></th>
                   </tr>
                 </thead>
                 <tbody>

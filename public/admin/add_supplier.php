@@ -22,8 +22,8 @@ try {
         </div>
         <div class="col-md-7  align-self-center">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                <li class="breadcrumb-item active">Add Supplier</li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)"><?php echo $lang['supplier_page']['add_supplier_page']['home'] ?></a></li>
+                <li class="breadcrumb-item active"><?php echo $lang['supplier_page']['add_supplier_page']['add_supplier'] ?></li>
             </ol>
         </div>
     </div>
@@ -43,9 +43,9 @@ try {
         <!-- // Author Name: Mayuri K.
 // for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
-                                            <label class="col-sm-3 control-label">Supplier Name</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['supplier_page']['add_supplier_page']['supplier_name'] ?></label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="brandName" placeholder="Supplier Name" name="brandName">
+                                                <input type="text" class="form-control" id="brandName" placeholder="<?php echo $lang['supplier_page']['add_supplier_page']['supplier_name'] ?>" name="brandName">
                                             </div>
                                         </div>
                                     </div>
@@ -54,9 +54,9 @@ try {
         <!-- // Author Name: Mayuri K.
 // for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
-                                            <label class="col-sm-3 control-label">Email</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['supplier_page']['add_supplier_page']['email'] ?></label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="supplierEmail" placeholder="Supplier Email" name="supplierEmail">
+                                                <input type="email" class="form-control" id="supplierEmail" placeholder="<?php echo $lang['supplier_page']['add_supplier_page']['email'] ?>" name="supplierEmail">
                                             </div>
                                         </div>
                                     </div>
@@ -65,9 +65,9 @@ try {
         <!-- // Author Name: Mayuri K.
 // for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
-                                            <label class="col-sm-3 control-label">Phone</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['supplier_page']['add_supplier_page']['phone'] ?></label>
                                             <div class="col-sm-9">
-                                                <input type="tel" class="form-control" id="supplierPhone" placeholder="Supplier Phone" name="supplierPhone">
+                                                <input type="tel" class="form-control" id="supplierPhone" placeholder="<?php echo $lang['supplier_page']['add_supplier_page']['phone'] ?>" name="supplierPhone">
                                             </div>
                                         </div>
                                     </div>
@@ -76,9 +76,9 @@ try {
         <!-- // Author Name: Mayuri K.
 // for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
-                                            <label class="col-sm-3 control-label">Address</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['supplier_page']['add_supplier_page']['address'] ?></label>
                                             <div class="col-sm-9">
-                                                <textarea class="form-control" id="supplierAddress" placeholder="Supplier Address" name="supplierAddress"></textarea>
+                                                <textarea class="form-control" id="supplierAddress" placeholder="<?php echo $lang['supplier_page']['add_supplier_page']['address'] ?>" name="supplierAddress"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -87,18 +87,18 @@ try {
         <!-- // Author Name: Mayuri K.
 // for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
-                                            <label class="col-sm-3 control-label">Status</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['supplier_page']['add_supplier_page']['status'] ?></label>
                                             <div class="col-sm-9">
                                                 <select class="form-control" id="brandStatus" name="brandStatus">
-                                                    <option value="">~~SELECT~~</option>
-                                                    <option value="Active">Active</option>
-                                                    <option value="Inactive">Inactive</option>
+                                                    <option value="">~~<?php echo $lang['supplier_page']['add_supplier_page']['select'] ?>~~</option>
+                                                    <option value="Active"><?php echo $lang['supplier_page']['add_supplier_page']['active'] ?></option>
+                                                    <option value="Inactive"><?php echo $lang['supplier_page']['add_supplier_page']['inactive'] ?></option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <button class="btn btn-primary" type="submit" name="submit" onclick="validateSupplier()">Submit</button>
+                                        <button class="btn btn-primary" type="submit" name="submit" onclick="validateSupplier()"><?php echo $lang['supplier_page']['add_supplier_page']['submit'] ?></button>
                                     </div>
                                 </form>
                             </div>
