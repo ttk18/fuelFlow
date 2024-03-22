@@ -1,9 +1,9 @@
 <?php
 session_start();
 include '../assets/constant/config.php';
-// Author Name: Mayuri K. 
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com -->  
+// Author Name: Mayuri K.
+//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
+// Visit website : www.mayurik.com -->
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -18,7 +18,7 @@ try {
 <div class="page-content-wrapper ">
     <div class="row tittle">
         <div class="top col-md-5 align-self-center">
-            <h5>Add Supplier Management</h5>
+            <h5><?php  echo $lang['supplier_page']['add_supplier_page']['add_supplier_management']; ?></h5>
         </div>
         <div class="col-md-7  align-self-center">
             <ol class="breadcrumb">
@@ -29,8 +29,8 @@ try {
     </div>
     <div class="container-fluid">
         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+        <!-- // Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
             <div class="col-lg-8" style="margin-left: 10%;">
                 <div class="card">
@@ -40,8 +40,8 @@ try {
                                 <form id="add_brand" method="POST" action="app/supplier_crud.php">
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+        <!-- // Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
                                             <label class="col-sm-3 control-label">Supplier Name</label>
                                             <div class="col-sm-9">
@@ -51,8 +51,8 @@ try {
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+        <!-- // Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
                                             <label class="col-sm-3 control-label">Email</label>
                                             <div class="col-sm-9">
@@ -62,8 +62,8 @@ try {
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+        <!-- // Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
                                             <label class="col-sm-3 control-label">Phone</label>
                                             <div class="col-sm-9">
@@ -73,8 +73,8 @@ try {
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+        <!-- // Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
                                             <label class="col-sm-3 control-label">Address</label>
                                             <div class="col-sm-9">
@@ -84,8 +84,8 @@ try {
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+        <!-- // Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
                                             <label class="col-sm-3 control-label">Status</label>
                                             <div class="col-sm-9">

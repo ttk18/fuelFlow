@@ -2,9 +2,7 @@
 
 
 include '../assets/constant/config.php';
-// Author Name: Mayuri K.
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
-// Visit website : www.mayurik.com -->
+
 include '../assets/constant/checklogin.php';
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -12,7 +10,13 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["language"])) {
+        $_SESSION["language"] = $_POST["language"];
+    }
+}
+//$_SESSION['language'] = 'vi';
+$lang = $_SESSION['language'] === 'vi' ? include "../assets/locales/vi/lang.php" : include "../assets/locales/en/lang.php";
 
 ?>
 
@@ -27,9 +31,7 @@ as $key1) { ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<!--   // Author Name: Mayuri K.
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
-// Visit website : www.mayurik.com -->
+
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -109,24 +111,21 @@ as $key1) { ?>
                     <li>
                         <a href="dashboard.php" class="waves-effect">
                             <i class="fas fa-home"></i>
-                            <span> Dashboard </span>
+                            <span> <?php  echo $lang['sidebar_menu']['dashboard']; ?> </span>
                         </a>
                     </li>
 
 
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect">
-                            <i class="fas fa-truck-arrow-right"></i> <span>Supplier</span> <span class="float-right"><i
+                            <i class="fas fa-truck-arrow-right"></i> <span><?php  echo $lang['sidebar_menu']['supplier']; ?></span> <span class="float-right"><i
                                         class="mdi mdi-chevron-right"></i></span></a>
                         <ul class="list-unstyled">
-                            <li><a href="add_supplier.php">Add Supplier</a></li>
+                            <li><a href="add_supplier.php"><?php  echo $lang['sidebar_menu']['add_supplier']; ?></a></li>
                             <li><a href="manage_supplier.php">Manage Supplier</a></li>
                             <li><a href="import_supplier.php">Import Supplier</a></li>
                         </ul>
                     </li>
-                    <!--      // Author Name: Mayuri K.
-                    // for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
-                    // Visit website : www.mayurik.com -->
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect">
                             <i class="fa fa-list"></i> <span>Categories</span> <span class="float-right"><i

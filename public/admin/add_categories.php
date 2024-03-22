@@ -9,6 +9,7 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
+
 ?>
 <?php include('include/sidebar.php'); ?>
 <!-- Top Bar End -->
@@ -19,7 +20,7 @@ try {
     <div class="row tittle">
 
         <div class="top col-md-5 align-self-center">
-            <h5>Add Categories Management</h5>
+            <h5><?php echo $lang['category_page']['add_category_page']['add_categories_management'] ?></h5>
         </div>
 
         <div class="col-md-7  align-self-center">

@@ -1,15 +1,15 @@
 <?php
 
 include '../assets/constant/config.php';
-// Author Name: Mayuri K. 
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com -->  
+// Author Name: Mayuri K.
+//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
+// Visit website : www.mayurik.com -->
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+    echo "Connection failed: " . $e->getMessage();
 }
 $y = date('Y');
 
@@ -28,9 +28,9 @@ $y = date('Y');
 
 <!-- validation script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-<!-- 
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+<!--
+     // Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com -->
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 <!--<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>-->
@@ -42,8 +42,8 @@ $y = date('Y');
 <script src="../assets/js/jquery.blockUI.js"></script>
 <script src="../assets/js/waves.js"></script>
 <script src="../assets/js/jquery.nicescroll.js"></script>
-<!--      // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+<!--      // Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com -->
 
 <script src="../assets/plugins/skycons/skycons.min.js"></script>
@@ -73,7 +73,8 @@ $y = date('Y');
 <script src="../assets/pages/datatables.init.js"></script>
 <!-- App js -->
 <script src="../assets/js/app.js"></script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="../assets/plugins/clockpicker/jquery-clockpicker.min.js"></script>
 <script src="../assets/plugins/colorpicker/jquery-asColor.js" type="text/javascript"></script>
 <script src="../assets/plugins/colorpicker/jquery-asGradient.js" type="text/javascript"></script>
@@ -84,21 +85,23 @@ $y = date('Y');
 <script src="https://cdn.ckeditor.com/ckeditor5/38.1.1/classic/ckeditor.js"></script>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+        integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-  ClassicEditor
-    .create(document.querySelector('#ckeditor'))
-    .catch(error => {
-      console.error(error);
-    });
+    ClassicEditor
+        .create(document.querySelector('#ckeditor'))
+        .catch(error => {
+            console.error(error);
+        });
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <!----------sweetalert---------------------->
 <script language="javascript">
-  var today = new Date();
-  document.getElementById('time').innerHTML = today;
+    var today = new Date();
+    document.getElementById('time').innerHTML = today;
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
 
@@ -106,52 +109,52 @@ $y = date('Y');
 <script src="bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
 
 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en'
-    }, 'google_translate_element');
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        }, 'google_translate_element');
 
-    var $googleDiv = $("#google_translate_element .skiptranslate");
-    var $googleDivChild = $("#google_translate_element .skiptranslate div");
-    $googleDivChild.next().remove();
+        var $googleDiv = $("#google_translate_element .skiptranslate");
+        var $googleDivChild = $("#google_translate_element .skiptranslate div");
+        $googleDivChild.next().remove();
 
-    $googleDiv.contents().filter(function() {
-      return this.nodeType === 3 && $.trim(this.nodeValue) !== '';
-    }).remove();
+        $googleDiv.contents().filter(function () {
+            return this.nodeType === 3 && $.trim(this.nodeValue) !== '';
+        }).remove();
 
-  }
+    }
 </script>
 <style>
-  .goog-te-gadget .goog-te-combo {
-    margin: 0px 0;
-    padding: 8px;
-    color: #000;
-    background: #eeee;
-  }
+    .goog-te-gadget .goog-te-combo {
+        margin: 0px 0;
+        padding: 8px;
+        color: #000;
+        background: #eeee;
+    }
 </style>
 <script>
-  document.getElementById("newpassword").addEventListener("input", checkPasswordStrength);
+    document.getElementById("newpassword").addEventListener("input", checkPasswordStrength);
 
-  function checkPasswordStrength() {
-    var password = document.getElementById("newpassword").value;
-    var strengthText = document.getElementById("password-strength");
+    function checkPasswordStrength() {
+        var password = document.getElementById("newpassword").value;
+        var strengthText = document.getElementById("password-strength");
 
-    var passwordLength = password.length;
-    var strengthLabel = "";
+        var passwordLength = password.length;
+        var strengthLabel = "";
 
-    if (passwordLength >= 8 && passwordLength <= 10) {
-      strengthLabel = "Medium";
-      strengthText.style.color = "orange";
-    } else if (passwordLength > 10) {
-      strengthLabel = "Strong";
-      strengthText.style.color = "green";
-    } else {
-      strengthLabel = "Weak";
-      strengthText.style.color = "red";
+        if (passwordLength >= 8 && passwordLength <= 10) {
+            strengthLabel = "Medium";
+            strengthText.style.color = "orange";
+        } else if (passwordLength > 10) {
+            strengthLabel = "Strong";
+            strengthText.style.color = "green";
+        } else {
+            strengthLabel = "Weak";
+            strengthText.style.color = "red";
+        }
+
+        strengthText.innerHTML = strengthLabel;
     }
-
-    strengthText.innerHTML = strengthLabel;
-  }
 </script>
 
 
@@ -166,7 +169,7 @@ $data = array();
 $records = $stmt->fetchAll();
 
 foreach ($records as $record) {
-  $data[] = array($record['fuelName'], (int)$record['openning_stock']);
+    $data[] = array($record['fuelName'], (int)$record['openning_stock']);
 }
 
 $data_json = json_encode($data);
@@ -175,117 +178,140 @@ $data_json = json_encode($data);
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
-  google.charts.load('current', {
-    'packages': ['corechart']
-  });
-  google.charts.setOnLoadCallback(drawChart);
-
-  function drawChart() {
-    // Parse JSON data
-    var jsonData = <?php echo $data_json; ?>;
-
-    // Convert JSON data to Google DataTable format
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'fuelName');
-    data.addColumn('number', 'openning_stock');
-    jsonData.forEach(function(row) {
-      data.addRow(row);
+    google.charts.load('current', {
+        'packages': ['corechart']
     });
+    google.charts.setOnLoadCallback(drawChart);
 
-    var options = {
-      title: 'Fuel Opening Stock' // Update chart title as needed
-    };
+    function drawChart() {
+        // Parse JSON data
+        var jsonData = <?php echo $data_json; ?>;
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        // Convert JSON data to Google DataTable format
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'fuelName');
+        data.addColumn('number', 'openning_stock');
+        jsonData.forEach(function (row) {
+            data.addRow(row);
+        });
 
-    chart.draw(data, options);
-  }
+        var options = {
+            title: 'Fuel Opening Stock' // Update chart title as needed
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+    }
 </script>
 
 
 <script>
-  google.charts.load('current', {
-    packages: ['corechart', 'bar']
-  });
-  google.charts.setOnLoadCallback(drawMultSeries);
+    google.charts.load('current', {
+        packages: ['corechart', 'bar']
+    });
+    google.charts.setOnLoadCallback(drawMultSeries);
 
-  function drawMultSeries() {
-    var data = google.visualization.arrayToDataTable([
-      ['City', '2010 Population', '2000 Population'],
-      ['New York City, NY', 8175000, 8008000],
-      ['Los Angeles, CA', 3792000, 3694000],
-      ['Chicago, IL', 2695000, 2896000],
-      ['Houston, TX', 2099000, 1953000],
-      ['Philadelphia, PA', 1526000, 1517000]
-    ]);
+    function drawMultSeries() {
+        var data = google.visualization.arrayToDataTable([
+            ['City', '2010 Population', '2000 Population'],
+            ['New York City, NY', 8175000, 8008000],
+            ['Los Angeles, CA', 3792000, 3694000],
+            ['Chicago, IL', 2695000, 2896000],
+            ['Houston, TX', 2099000, 1953000],
+            ['Philadelphia, PA', 1526000, 1517000]
+        ]);
 
-    var options = {
-      title: 'Population of Largest U.S. Cities',
-      chartArea: {
-        width: '50%'
-      },
-      hAxis: {
-        title: 'Total Population',
-        minValue: 0
-      },
-      vAxis: {
-        title: 'City'
-      }
-    };
+        var options = {
+            title: 'Population of Largest U.S. Cities',
+            chartArea: {
+                width: '50%'
+            },
+            hAxis: {
+                title: 'Total Population',
+                minValue: 0
+            },
+            vAxis: {
+                title: 'City'
+            }
+        };
 
-    var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-  }
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    }
 </script>
 
 <script>
-  function editForm(event, id, file) {
-    event.preventDefault(); // Prevent the default link behavior
+    function editForm(event, id, file) {
+        event.preventDefault(); // Prevent the default link behavior
 
-    // Create a form dynamically
-    var form = document.createElement('form');
-    form.action = file;
-    form.method = 'post';
+        // Create a form dynamically
+        var form = document.createElement('form');
+        form.action = file;
+        form.method = 'post';
 
-    // Create a hidden input field for the ID
-    var input = document.createElement('input');
-    input.type = 'hidden';
-    input.name = 'id';
-    input.value = id;
+        // Create a hidden input field for the ID
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'id';
+        input.value = id;
 
-    // Append the input field to the form
-    form.appendChild(input);
+        // Append the input field to the form
+        form.appendChild(input);
 
-    // Append the form to the body and submit it
-    document.body.appendChild(form);
-    form.submit();
-  }
+        // Append the form to the body and submit it
+        document.body.appendChild(form);
+        form.submit();
+    }
 </script>
 
 
 <script>
-  function delForm(event, id, file) {
-    event.preventDefault(); // Prevent the default link behavior
+    function delForm(event, id, file) {
+        event.preventDefault(); // Prevent the default link behavior
 
-    // Create a form dynamically
-    var form = document.createElement('form');
-    form.action = file;
-    form.method = 'post';
+        // Create a form dynamically
+        var form = document.createElement('form');
+        form.action = file;
+        form.method = 'post';
 
-    // Create a hidden input field for the ID
-    var input = document.createElement('input');
-    input.type = 'hidden';
-    input.name = 'del_id';
-    input.value = id;
+        // Create a hidden input field for the ID
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'del_id';
+        input.value = id;
 
-    // Append the input field to the form
-    form.appendChild(input);
+        // Append the input field to the form
+        form.appendChild(input);
 
-    // Append the form to the body and submit it
-    document.body.appendChild(form);
-    form.submit();
-  }
+        // Append the form to the body and submit it
+        document.body.appendChild(form);
+        form.submit();
+    }
 </script>
+<script>
+    document.getElementById('languageSelect').addEventListener('change', function() {
+        // Get the selected language
+        var selectedLanguage = this.value;
+        // console.log(selectedLanguage);
+
+        // Send an AJAX request to store the selected language in session
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST','');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                // Reload the page if storing language was successful
+                location.reload();
+            } else {
+                // Handle errors here
+                console.error('Error storing language: ' + xhr.responseText);
+            }
+        };
+        xhr.send('language=' + encodeURIComponent(selectedLanguage));
+    });
+</script>
+
 
 </body>
 
