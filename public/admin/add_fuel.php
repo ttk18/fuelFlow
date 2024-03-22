@@ -1,9 +1,9 @@
 <?php
 session_start();
 include '../assets/constant/config.php';
-// Author Name: Mayuri K. 
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com -->  
+// Author Name: Mayuri K.
+//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
+// Visit website : www.mayurik.com -->
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -22,13 +22,13 @@ try {
   <div class="row tittle">
 
     <div class="top col-md-5 align-self-center">
-      <h5>Add fuel</h5>
+      <h5><?php echo $lang['fuel_page']['add_fuel_page']['add_fuel'] ?></h5>
     </div>
 
     <div class="col-md-7  align-self-center">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-        <li class="breadcrumb-item active">Add fuel</li>
+        <li class="breadcrumb-item"><a href="javascript:void(0)"><?php echo $lang['fuel_page']['add_fuel_page']['home'] ?></a></li>
+        <li class="breadcrumb-item active"><?php echo $lang['fuel_page']['add_fuel_page']['add_fuel'] ?></li>
       </ol>
     </div>
   </div>
@@ -37,8 +37,8 @@ try {
 
   <div class="container-fluid">
     <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+        <!-- // Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com  -->
       <div class="col-lg-10" style="margin-left: 10%;">
         <div class="card">
@@ -50,31 +50,31 @@ try {
                 <form name="myform" method="POST" class="row" id="add_fuel" action="app/fuel_crud.php">
 
                   <div class="form-group col-md-6">
-                    <label class="control-label">Fuel Name</label>
+                    <label class="control-label"><?php echo $lang['fuel_page']['add_fuel_page']['fuel_name'] ?></label>
                     <input type="text" class="form-control" id="fuelName" name="fuelName">
                   </div>
                   <div class="form-group col-md-6">
-                    <label class="control-label">Number of Liters</label>
+                    <label class="control-label"><?php echo $lang['fuel_page']['add_fuel_page']['number_of_liters'] ?></label>
                     <input type="text" class="form-control" id="openning_stock" name="openning_stock">
                   </div>
 
                   <div class="form-group col-md-6">
-                    <label class="control-label">Rate</label>
+                    <label class="control-label"><?php echo $lang['fuel_page']['add_fuel_page']['rate'] ?></label>
                     <input type="text" class="form-control" id="rate" name="rate">
                   </div>
 
                   <div class="form-group col-md-6">
-                    <label class="control-label">Unit Price</label>
+                    <label class="control-label"><?php echo $lang['fuel_page']['add_fuel_page']['unit_price'] ?></label>
                     <input type="text" class="form-control" id="unit_price" name="unit_price">
                   </div>
 
                   <div class="form-group col-md-6">
-                    <label class="control-label">Batch No</label>
+                    <label class="control-label"><?php echo $lang['fuel_page']['add_fuel_page']['batch_no'] ?></label>
                     <input type="text" class="form-control" id="bno" name="bno">
                   </div>
 
                   <div class="form-group col-md-6">
-                    <label class="control-label">Expiry Date</label>
+                    <label class="control-label"><?php echo $lang['fuel_page']['add_fuel_page']['expiry_date'] ?></label>
                     <input type="date" class="form-control" id="expdate" name="expdate">
                   </div>
 
@@ -88,9 +88,9 @@ try {
                   </div> -->
 
                   <div class="form-group col-md-6">
-                    <label class="control-label">Supplier Name</label>
+                    <label class="control-label"><?php echo $lang['fuel_page']['add_fuel_page']['supplier_name'] ?></label>
                     <select class="form-control" id="supplierName" name="supplierName">
-                      <option value="">~~SELECT~~</option>
+                      <option value="">~~<?php echo $lang['fuel_page']['add_fuel_page']['select'] ?>~~</option>
                       <?php
                       $stmt = $conn->prepare("SELECT * FROM `supplier` WHERE delete_status='0' ");
                       $stmt->execute();
@@ -103,9 +103,9 @@ try {
                   </div>
 
                   <div class="form-group col-md-6">
-                    <label class="control-label">Category Name</label>
+                    <label class="control-label"><?php echo $lang['fuel_page']['add_fuel_page']['category_name'] ?></label>
                     <select class="form-control" id="categoryName" name="categoryName">
-                      <option value="">~~SELECT~~</option>
+                      <option value="">~~<?php echo $lang['fuel_page']['add_fuel_page']['select'] ?>~~</option>
                       <?php
                       $stmt = $conn->prepare("SELECT * FROM `fuel_category` WHERE delete_status='0' ");
                       $stmt->execute();
@@ -120,7 +120,7 @@ try {
 
 
                   <div class="form-group col-md-6 col-md-12">
-                    <button class="btn btn-primary" type="submit" onclick="addFuel()" name="submit">Submit</button>
+                    <button class="btn btn-primary" type="submit" onclick="addFuel()" name="submit"><?php echo $lang['fuel_page']['add_fuel_page']['submit'] ?></button>
                   </div>
 
 

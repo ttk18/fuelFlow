@@ -17,13 +17,13 @@ try {
   <div class="row tittle">
 
     <div class="top col-md-5 align-self-center">
-      <h5>View Order</h5>
+      <h5><?php echo $lang['invoice_page']['manage_invoice_page']['view_order'] ?></h5>
     </div>
 
     <div class="col-md-7  align-self-center">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-        <li class="breadcrumb-item active">View Order</li>
+        <li class="breadcrumb-item"><a href="javascript:void(0)"><?php echo $lang['invoice_page']['manage_invoice_page']['home'] ?></a></li>
+        <li class="breadcrumb-item active"><?php echo $lang['invoice_page']['manage_invoice_page']['view_order'] ?></li>
       </ol>
     </div>
   </div>
@@ -38,7 +38,7 @@ try {
         <div class="card">
           <div class="card-body">
             <div class="btn-group float-left">
-              <a href="add_invoices.php" class="btn btn-primary mb-3">Add Order</a>
+              <a href="add_invoices.php" class="btn btn-primary mb-3"><?php echo $lang['invoice_page']['manage_invoice_page']['add_order'] ?></a>
             </div>
 
             <div class="table-responsive">
@@ -47,14 +47,14 @@ try {
                 <thead>
                   <tr>
                     <th>#</th>
-                    <th>Build Date</th>
-                    <th>Invoice No.</th>
-                    <th>Customer No.</th>
-                    <th>Customer Name</th>
-                    <th>Email</th>
-                    <th>Address</th>
-                    <th>Total</th>
-                    <th>Action</th>
+                    <th><?php echo $lang['invoice_page']['manage_invoice_page']['build_date'] ?></th>
+                    <th><?php echo $lang['invoice_page']['manage_invoice_page']['invoice_no'] ?></th>
+                    <th><?php echo $lang['invoice_page']['manage_invoice_page']['customer_no'] ?></th>
+                    <th><?php echo $lang['invoice_page']['manage_invoice_page']['customer_name'] ?></th>
+                    <th><?php echo $lang['invoice_page']['manage_invoice_page']['email'] ?></th>
+                    <th><?php echo $lang['invoice_page']['manage_invoice_page']['address'] ?></th>
+                    <th><?php echo $lang['invoice_page']['manage_invoice_page']['total'] ?></th>
+                    <th><?php echo $lang['invoice_page']['manage_invoice_page']['action'] ?></th>
                   </tr>
                 </thead>
                 <tbody>

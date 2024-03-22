@@ -19,13 +19,13 @@ try {
   <div class="row tittle">
 
     <div class="top col-md-5 align-self-center">
-      <h5>Invoice Management</h5>
+      <h5><?php echo $lang['invoice_page']['add_invoice_page']['invoice_management'] ?></h5>
     </div>
 
     <div class="col-md-7  align-self-center">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-        <li class="breadcrumb-item active">Invoice</li>
+        <li class="breadcrumb-item"><a href="javascript:void(0)"><?php echo $lang['invoice_page']['add_invoice_page']['home'] ?></a></li>
+        <li class="breadcrumb-item active"><?php echo $lang['invoice_page']['add_invoice_page']['invoice'] ?></li>
       </ol>
     </div>
   </div>
@@ -45,12 +45,12 @@ try {
 
                   <div class="form-row">
                     <div class="form-group row col-md-6">
-                      <label class="col-sm-3 control-label">Customer Name:</label>
+                      <label class="col-sm-3 control-label"><?php echo $lang['invoice_page']['add_invoice_page']['customer_name'] ?></label>
                       <div class="col-sm-9">
                         <!-- <input type="text" name="customer_id" class="form-control" data-provide="" placeholder="Customer Name" required> -->
 
                         <select class="form-control select2 " name="customer_id" id="cust_name">
-                          <option value="">Select</option>
+                          <option value=""><?php echo $lang['invoice_page']['add_invoice_page']['select'] ?></option>
                           <?php
                           $stmt = $conn->prepare("SELECT * FROM `customer` where delete_status='0' ");
                           $stmt->execute();
@@ -66,7 +66,7 @@ try {
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <?php $current_date = date('Y-m-d'); ?>
                     <div class="form-group row col-md-6">
-                      <label class="col-sm-3 control-label"> Date</label>
+                      <label class="col-sm-3 control-label"> <?php echo $lang['invoice_page']['add_invoice_page']['date'] ?></label>
                       <div class="col-sm-9">
                         <input type="date" name="build_date" class="form-control " value="<?php echo $current_date; ?>" data-provide="datepicker">
                       </div>
@@ -74,15 +74,15 @@ try {
                     &nbsp;&nbsp;&nbsp;&nbsp;
 
                     <div class="form-group row col-md-6">
-                      <label class="col-sm-3 control-label">Customer No: </label>
+                      <label class="col-sm-3 control-label"><?php echo $lang['invoice_page']['add_invoice_page']['customer_no'] ?> </label>
                       <div class="col-sm-9">
-                        <input type="text" name="customerPhone" class="form-control " placeholder="Customer No" id="customerPhone" minlength="1" maxlength="10" pattern="^[0][1-9]\d{9}$|^[1-9]\d{9}$" required title="Enter Valid Mobile No">
+                        <input type="text" name="customerPhone" class="form-control " placeholder="<?php echo $lang['invoice_page']['add_invoice_page']['invoice_no'] ?>" id="customerPhone" minlength="1" maxlength="10" pattern="^[0][1-9]\d{9}$|^[1-9]\d{9}$" required title="Enter Valid Mobile No">
 
 
                       </div>
                     </div>&nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="form-group row col-md-6">
-                      <label class="col-sm-3 control-label">Invoice No:</label>
+                      <label class="col-sm-3 control-label"><?php echo $lang['invoice_page']['add_invoice_page']['invoice_no'] ?></label>
                       <div class="col-sm-9">
                         <?php
                         $user = "select * from tbl_invoice where  id=(select max(id) from tbl_invoice)";
@@ -102,16 +102,16 @@ try {
                     &nbsp;&nbsp;&nbsp;&nbsp;
 
                     <div class="form-group row col-md-6">
-                      <label class="col-sm-3 control-label">Customer Email: </label>
+                      <label class="col-sm-3 control-label"><?php echo $lang['invoice_page']['add_invoice_page']['customer_email'] ?> </label>
                       <div class="col-sm-9">
-                        <input type="email" name="customerEmail" class="form-control " placeholder="Customer Email" id="customerEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        <input type="email" name="customerEmail" class="form-control " placeholder="<?php echo $lang['invoice_page']['add_invoice_page']['customer_email'] ?>" id="customerEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
                       </div>
                     </div>&nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="form-group row col-md-6">
-                      <label class="col-sm-3 control-label"> Address:</label>
+                      <label class="col-sm-3 control-label"><?php echo $lang['invoice_page']['add_invoice_page']['address'] ?></label>
                       <div class="col-sm-9">
-                        <textarea class="form-control" required name="customerAddress" id="customerAddress" style="height:70px;" placeholder="Customer Address"></textarea>
+                        <textarea class="form-control" required name="customerAddress" id="customerAddress" style="height:70px;" placeholder="<?php echo $lang['invoice_page']['add_invoice_page']['address'] ?>"></textarea>
                       </div>
                     </div>
 
@@ -120,24 +120,24 @@ try {
 
                   <div class="form-group row">
                     <div class="col-sm-1">
-                      Sr no.
+                        <?php echo $lang['invoice_page']['add_invoice_page']['sr_no'] ?>
                     </div>
 
                     <div class="col-sm-3">
-                      Select Service
+                        <?php echo $lang['invoice_page']['add_invoice_page']['select_service'] ?>
                     </div>
 
                     <div class="col-sm-1">
-                      Quantity
+                        <?php echo $lang['invoice_page']['add_invoice_page']['quantity'] ?>
                     </div>
                     <div class="col-sm-2">
-                      Sale Price
+                        <?php echo $lang['invoice_page']['add_invoice_page']['sale_price'] ?>
                     </div>
                     <div class="col-sm-2">
-                      Total
+                        <?php echo $lang['invoice_page']['add_invoice_page']['total'] ?>
                     </div>
                     <div class="col-sm-2">
-                      Action
+                        <?php echo $lang['invoice_page']['add_invoice_page']['action'] ?>
                     </div>
 
                   </div>
@@ -147,7 +147,7 @@ try {
                       <div class="col-sm-3">
                         <div class="col-sm-12">
                           <select name="product_id[]" class="form-control product_id " required>
-                            <option value="">--Select Service--</option>
+                            <option value="">--<?php echo $lang['invoice_page']['add_invoice_page']['invoice_management'] ?>--</option>
                             <?php
                             $sql = "SELECT * FROM fuel_tbl where delete_status='0' order by id desc";
                             $statement = $conn->prepare($sql);
@@ -165,10 +165,10 @@ try {
                       </div>
 
                       <div class="col-sm-2">
-                        <input type="text" class="form-control" id="rate" name="rate[]" placeholder="Sale Price" required>
+                        <input type="text" class="form-control" id="rate" name="rate[]" placeholder="<?php echo $lang['invoice_page']['add_invoice_page']['sale_price'] ?>" required>
                       </div>
                       <div class="col-sm-2">
-                        <input type="text" class="form-control total" id="total" name="total[]" placeholder="Total" readonly="">
+                        <input type="text" class="form-control total" id="total" name="total[]" placeholder="<?php echo $lang['invoice_page']['add_invoice_page']['total'] ?>" readonly="">
                       </div>
 
                       <div class="col-sm-2">
@@ -185,7 +185,7 @@ try {
                       <div class="col-sm-3">
                         <div class="col-sm-12">
                           <select name="product_id[]" class="form-control product_id ">
-                            <option value="">--Select Service--</option>
+                            <option value="">--<?php echo $lang['invoice_page']['add_invoice_page']['select_service'] ?>--</option>
                             <?php
                             $sql = "SELECT * FROM fuel_tbl where delete_status='0' order by id desc";
                             $statement = $conn->prepare($sql);
@@ -207,7 +207,7 @@ try {
                         <input type="text" class="form-control" id="rate" name="rate[]" placeholder="Sale Price">
                       </div>
                       <div class="col-sm-2">
-                        <input type="text" class="form-control total" id="total" name="total[]" placeholder="Total" readonly="">
+                        <input type="text" class="form-control total" id="total" name="total[]" placeholder="<?php echo $lang['invoice_page']['add_invoice_page']['total'] ?>" readonly="">
                       </div>
                       <div class="col-sm-2">
                         <button class="btn btn-danger remove" type="button"><i class="fa fa-minus"></i></button>
@@ -216,27 +216,27 @@ try {
                   </div>
 
                   <div class="form-group row control-group">
-                    <label class="col-sm-6 control-label">GST %</label>
+                    <label class="col-sm-6 control-label"><?php echo $lang['invoice_page']['add_invoice_page']['gst_%'] ?></label>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control" id="gst_rate" name="gst_rate" placeholder="GST %" value="0" min="0" max="99">
+                      <input type="text" class="form-control" id="gst_rate" name="gst_rate" placeholder="<?php echo $lang['invoice_page']['add_invoice_page']['gst_%'] ?>" value="0" min="0" max="99">
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label class="col-sm-6 control-label">Discount</label>
+                    <label class="col-sm-6 control-label"><?php echo $lang['invoice_page']['add_invoice_page']['discount'] ?></label>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control" id="discount" name="discount" placeholder="Discount %" value="0" min="0" max="100">
+                      <input type="text" class="form-control" id="discount" name="discount" placeholder="<?php echo $lang['invoice_page']['add_invoice_page']['discount'] ?> %" value="0" min="0" max="100">
                     </div>
                   </div>
                   <input type="hidden" name="subtotal" id="subtotal" class="form-control" placeholder="Subtotal" readonly="">
 
                   <div class="form-group row">
-                    <label class="col-sm-6 control-label"> Final Total</label>
+                    <label class="col-sm-6 control-label"> <?php echo $lang['invoice_page']['add_invoice_page']['final_total'] ?></label>
                     <div class="col-sm-3">
-                      <input type="text" name="final_total" id="final_total" class="form-control" placeholder="Total" readonly="">
+                      <input type="text" name="final_total" id="final_total" class="form-control" placeholder="<?php echo $lang['invoice_page']['add_invoice_page']['total'] ?>" readonly="">
                     </div>
                   </div>
 
-                  <button type="submit" name="submit" class="btn btn-primary btn-flat m-b-30 m-t-30" id="submit_check">Submit</button>
+                  <button type="submit" name="submit" class="btn btn-primary btn-flat m-b-30 m-t-30" id="submit_check"><?php echo $lang['invoice_page']['add_invoice_page']['submit'] ?></button>
                   <p id="GFG_DOWN" style="color: green;">
                 </form>
 

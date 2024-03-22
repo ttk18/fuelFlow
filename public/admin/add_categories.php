@@ -25,8 +25,8 @@ try {
 
         <div class="col-md-7  align-self-center">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                <li class="breadcrumb-item active">Add Categories</li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)"><?php echo $lang['category_page']['add_category_page']['home'] ?></a></li>
+                <li class="breadcrumb-item active"><?php echo $lang['category_page']['add_category_page']['add_categories'] ?> </li>
             </ol>
         </div>
     </div>
@@ -47,10 +47,10 @@ try {
                                     <div class="form-group">
                                         <div class="row">
 
-                                            <label class="col-sm-3 control-label">Categories Name</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['category_page']['add_category_page']['categories_name'] ?></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" id="name"
-                                                       placeholder="Categories Name" name="name">
+                                                       placeholder="<?php echo $lang['category_page']['add_category_page']['categories_name'] ?> " name="name">
                                             </div>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@ try {
                                     <div class="form-group col-md-12">
 
                                         <button class="btn btn-primary" type="submit" name="submit"
-                                                onclick="validateSupplier()">Submit
+                                                onclick="validateSupplier()"><?php echo $lang['category_page']['add_category_page']['submit'] ?>
                                         </button>
 
                                     </div>

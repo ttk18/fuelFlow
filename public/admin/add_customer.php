@@ -14,12 +14,12 @@ try {
 <div class="page-content-wrapper ">
     <div class="row tittle">
         <div class="top col-md-5 align-self-center">
-            <h5>Add Customer Management</h5>
+            <h5><?php echo $lang['customer_page']['add_customer_page']['add_customer_management'] ?></h5>
         </div>
         <div class="col-md-7  align-self-center">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                <li class="breadcrumb-item active">Add Customer</li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)"><?php echo $lang['customer_page']['add_customer_page']['home'] ?></a></li>
+                <li class="breadcrumb-item active"><?php echo $lang['customer_page']['add_customer_page']['add_customer_management'] ?></li>
             </ol>
         </div>
     </div>
@@ -35,20 +35,20 @@ try {
                                     <div class="form-group">
                                         <div class="row">
 
-                                            <label class="col-sm-3 control-label">Customer Name</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['customer_page']['add_customer_page']['customer_name'] ?></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" id="brandName"
-                                                       placeholder="customer Name" name="brandName">
+                                                       placeholder="<?php echo $lang['customer_page']['add_customer_page']['customer_name'] ?>" name="brandName">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
 
-                                            <label class="col-sm-3 control-label">Email</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['customer_page']['add_customer_page']['email'] ?></label>
                                             <div class="col-sm-9">
                                                 <input type="email" class="form-control" id="customerEmail"
-                                                       placeholder="customer Email" name="customerEmail">
+                                                       placeholder="<?php echo $lang['customer_page']['add_customer_page']['customer_email'] ?>" name="customerEmail">
                                             </div>
                                         </div>
                                     </div>
@@ -58,17 +58,17 @@ try {
                                             <label class="col-sm-3 control-label">Phone</label>
                                             <div class="col-sm-9">
                                                 <input type="tel" class="form-control" id="customerPhone"
-                                                       placeholder="customer Phone" name="customerPhone">
+                                                       placeholder="<?php echo $lang['customer_page']['add_customer_page']['customer_phone'] ?>" name="customerPhone">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
 
-                                            <label class="col-sm-3 control-label">Address</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['customer_page']['add_customer_page']['address'] ?></label>
                                             <div class="col-sm-9">
                                                 <textarea class="form-control" id="customerAddress"
-                                                          placeholder="customer Address"
+                                                          placeholder="<?php echo $lang['customer_page']['add_customer_page']['customer_address'] ?>"
                                                           name="customerAddress"></textarea>
                                             </div>
                                         </div>
@@ -76,19 +76,19 @@ try {
                                     <div class="form-group">
                                         <div class="row">
 
-                                            <label class="col-sm-3 control-label">Status</label>
+                                            <label class="col-sm-3 control-label"><?php echo $lang['customer_page']['add_customer_page']['status'] ?></label>
                                             <div class="col-sm-9">
                                                 <select class="form-control" id="brandStatus" name="brandStatus">
-                                                    <option value="">~~SELECT~~</option>
-                                                    <option value="Active">Active</option>
-                                                    <option value="Inactive">Inactive</option>
+                                                    <option value="">~~<?php echo $lang['customer_page']['add_customer_page']['select'] ?>~~</option>
+                                                    <option value="Active"><?php echo $lang['customer_page']['add_customer_page']['active'] ?></option>
+                                                    <option value="Inactive"><?php echo $lang['customer_page']['add_customer_page']['inactive'] ?></option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <button class="btn btn-primary" type="submit" name="submit"
-                                                onclick="validatecustomer()">Submit
+                                                onclick="validatecustomer()"><?php echo $lang['customer_page']['add_customer_page']['submit'] ?>
                                         </button>
                                     </div>
                                 </form>

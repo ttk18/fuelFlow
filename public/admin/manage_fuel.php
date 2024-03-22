@@ -17,12 +17,12 @@ try {
 <div class="page-content-wrapper ">
     <div class="row tittle">
         <div class="top col-md-5 align-self-center">
-            <h5>View Fuel</h5>
+            <h5><?php echo $lang['fuel_page']['manage_fuel_page']['view_fuel'] ?></h5>
         </div>
         <div class="col-md-7  align-self-center">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                <li class="breadcrumb-item active">View Fuel</li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)"><?php echo $lang['fuel_page']['manage_fuel_page']['home'] ?></a></li>
+                <li class="breadcrumb-item active"><?php echo $lang['fuel_page']['manage_fuel_page']['view_fuel'] ?></li>
             </ol>
         </div>
     </div>
@@ -34,7 +34,7 @@ try {
                 <div class="card">
                     <div class="card-body">
                         <div class="btn-group float-left">
-                            <a href="add_fuel.php" class="btn btn-primary mb-3">Add Fuel</a>
+                            <a href="add_fuel.php" class="btn btn-primary mb-3"><?php echo $lang['fuel_page']['manage_fuel_page']['add_fuel'] ?> </a>
                         </div>
                         <div class="table-responsive">
                             <table id="datatable-buttons"
@@ -43,17 +43,17 @@ try {
                                    enctype="multipart/form-data">
                                 <thead>
                                 <tr>
-                                    <th>Serial</th>
-                                    <th>Fuel Name</th>
-                                    <th>Number of Liters</th>
-                                    <th>Rate</th>
-                                    <th>unit_price</th>
-                                    <th>Batch No</th>
-                                    <th>Expiry Date</th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['serial'] ?></th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['fuel_name'] ?> </th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['number_of_liters'] ?>  </th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['rate'] ?></th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['unit_price'] ?></th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['batch_no'] ?> </th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['expiry_date'] ?> </th>
                                     <!-- <th>Formula</th> -->
-                                    <th>Supplier Name</th>
-                                    <th>Category Name</th>
-                                    <th>Action</th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['supplier_name'] ?> </th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['category_name'] ?> </th>
+                                    <th><?php echo $lang['fuel_page']['manage_fuel_page']['action'] ?></th>
                                 </tr>
                                 </thead>
                                 <tbody>

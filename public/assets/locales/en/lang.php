@@ -1,6 +1,15 @@
 <?php
 
 return array(
+    "header" => array(
+        "welcome" => "Welcome",
+        "profile" => "Profile",
+        "change_password" => "Change Password",
+        "logout" => "Logout",
+        "choose_language" => "Choose language",
+        "vietnamese" => "Vietnamese",
+        "english" => "English"
+    ),
     "sidebar_menu" => array(
         "dashboard" => "Dashboard",
         "supplier" => "Supplier",
@@ -78,13 +87,16 @@ return array(
             "add_categories_management" => "Add Categories Management",
             "home" => "Home",
             "add_categories" => "Add Categories",
+            "categories_name" => "Categories name",
             "submit" => "Submit"
         ),
         "manage_category_page" => array(
             "View Fuel Categories" => "View Fuel Categories",
             "home" => "Home",
-            "Fuel Category Name" => "Fuel Category Name",
-            "action" => "Action"
+            "fuel_category_name" => "Fuel Category Name",
+            "action" => "Action",
+            "add_fuel_category" => "Add Fuel Category",
+            "serial" => "Serial",
         )
     ),
 
@@ -99,7 +111,12 @@ return array(
             "address" => "Address",
             "status" => "Status",
             "select" => "SELECT",
-            "submit" => "Submit"
+            "submit" => "Submit",
+            "customer_email" => "Customer Email",
+            "customer_phone" => "Customer Phone",
+            "customer_address" => "Customer Address",
+            "active" => "Active",
+            "inactive" => "Inactivet"
         ),
         "manage_customer_page" => array(
             "view_customer" => "View Fuel Categories",
@@ -154,6 +171,7 @@ return array(
             "invoice" => "Invoice",
             "customer_name" => "Customer Name",
             "customer_no" => "Customer No",
+            "select" => "Select",
             "customer_email" => "Customer Email",
             "date" => "Date",
             "invoice_no" => "Invoice No",
@@ -192,6 +210,7 @@ return array(
             "start_date" => "Start Date",
             "end_date" => "End Date",
             "serial" => "Serial",
+            "search" => "Search",
             "customer_name" => "Customer Name",
             "customer_no" => "Customer No",
             "customer_email" => "Customer Email",
@@ -201,7 +220,9 @@ return array(
             "subtotal" => "Subtotal",
             "final Total" => "Final Total",
             "gst" => "GST",
-            "discount" => "Discount"
+            "discount" => "Discount",
+            "created_date" => "Created Date",
+            "action" => "Action",
         )
     ),
 );

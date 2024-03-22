@@ -108,14 +108,14 @@ as $key) {
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                     <!-- item-->
                     <div class="dropdown-item noti-title">
-                        <h5>Welcome</h5>
+                        <h5><?php echo $lang['header']['welcome'] ?></h5>
                     </div>
                     <a class="dropdown-item" href="profile.php"><i class="mdi mdi-account-circle m-r-5 text-muted"></i>
-                        Profile</a>
+                        <?php echo $lang['header']['profile'] ?> </a>
                     <a class="dropdown-item" href="changepass.php"><i
-                                class="mdi mdi-lock-open-outline m-r-5 text-muted"></i> Change Password</a>
+                                class="mdi mdi-lock-open-outline m-r-5 text-muted"></i><?php echo $lang['header']['change_password'] ?>  </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="../logout.php"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                    <a class="dropdown-item" href="../logout.php"><i class="mdi mdi-logout m-r-5 text-muted"></i><?php echo $lang['header']['logout'] ?> </a>
                 </div>
             </li>
 
@@ -124,9 +124,9 @@ as $key) {
              <span class="localize p-2 mr-2 form-group " id="languageDropdown">
               <form id="languageForm" action="">
                 <select name="languageSelect" id="languageSelect" class="form-control">
-                  <option value="">Chọn ngôn ngữ</option>
-                  <option value="vi">Việt Nam</option>
-                  <option value="en">English</option>
+                  <option value=""><?php echo $lang['header']['choose_language'] ?></option>
+                  <option value="vi"><?php echo $lang['header']['vietnamese'] ?> </option>
+                  <option value="en"><?php echo $lang['header']['english'] ?></option>
                     <!-- Add more options for other languages as needed -->
                 </select>
               </form>

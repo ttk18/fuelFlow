@@ -1,26 +1,34 @@
 <?php
-
 return array(
+    "header" => array(
+        "welcome" => "Xin chào",
+        "profile" => "Trang cá nhân",
+        "change_password" => "Đổi mật khẩu",
+        "logout" => "Đăng xuất",
+        "choose_language" => "Chọn ngôn ngữ",
+        "vietnamese" => "Việt Nam",
+        "english" => "English"
+    ),
     "sidebar_menu" => array(
         "dashboard" => "Bảng điều khiển",
         "supplier" => "Nhà cung cấp",
-        "add_supplier" => "Thêm Nhà cung cấp",
-        "manage_supplier" => "Quản lý Nhà cung cấp",
-        "import_supplier" => "Nhập Nhà cung cấp",
+        "add_supplier" => "Thêm nhà cung cấp",
+        "manage_supplier" => "Quản lý nhà cung cấp",
+        "import_supplier" => "Nhập nhà cung cấp",
         "categories" => "Danh mục",
-        "add_categories" => "Thêm Danh mục",
-        "manage_categories" => "Quản lý Danh mục",
+        "add_categories" => "Thêm danh mục",
+        "manage_categories" => "Quản lý danh mục",
         "customer" => "Khách hàng",
-        "add_customer" => "Thêm Khách hàng",
-        "manage_customer" => "Quản lý Khách hàng",
+        "add_customer" => "Thêm khách hàng",
+        "manage_customer" => "Quản lý khách hàng",
         "fuels" => "Nhiên liệu",
-        "add_fuel" => "Thêm Nhiên liệu",
-        "manage_fuel" => "Quản lý Nhiên liệu",
+        "add_fuel" => "Thêm nhiên liệu",
+        "manage_fuel" => "Quản lý nhiên liệu",
         "invoices" => "Hóa đơn",
-        "add_invoices" => "Thêm Hóa đơn",
-        "manage_invoices" => "Quản lý Hóa đơn",
+        "add_invoices" => "Thêm hóa đơn",
+        "manage_invoices" => "Quản lý hóa đơn",
         "reports" => "Báo cáo",
-        "order_report" => "Báo cáo Đơn hàng"
+        "order_report" => "Báo cáo đơn hàng"
     ),
     "dashboard_page" => array(
         "dashboard" => "Bảng điều khiển",
@@ -40,26 +48,26 @@ return array(
     ),
     "supplier_page" => array(
         "add_supplier_page" => array(
-            "add_supplier_management" => "Thêm Quản lý Nhà cung cấp",
+            "add_supplier_management" => "Thêm quản lý nhà cung cấp",
             "home" => "Trang chủ",
-            "add_supplier" => "Thêm Nhà cung cấp",
-            "supplier_name" => "Tên Nhà cung cấp",
+            "add_supplier" => "Thêm nhà cung cấp",
+            "supplier_name" => "Tên nhà cung cấp",
             "email" => "Email",
             "phone" => "Điện thoại",
             "address" => "Địa chỉ",
             "status" => "Trạng thái",
-            "supplier_email" => "Email Nhà cung cấp",
-            "supplier_phone" => "Điện thoại Nhà cung cấp",
-            "supplier_address" => "Địa chỉ Nhà cung cấp",
+            "supplier_email" => "Email nhà cung cấp",
+            "supplier_phone" => "Điện thoại nhà cung cấp",
+            "supplier_address" => "Địa chỉ nhà cung cấp",
             "select" => "Chọn",
             "submit" => "Gửi"
         ),
         "manage_supplier_page" => array(
-            "view_supplier" => "Xem Nhà cung cấp",
+            "view_supplier" => "Xem nhà cung cấp",
             "home" => "Trang chủ",
-            "add_supplier" => "Thêm Nhà cung cấp",
+            "add_supplier" => "Thêm nhà cung cấp",
             "serial" => "Số serial",
-            "supplier_name" => "Tên Nhà cung cấp",
+            "supplier_name" => "Tên nhà cung cấp",
             "email" => "Email",
             "phone" => "Điện thoại",
             "address" => "Địa chỉ",
@@ -67,46 +75,54 @@ return array(
             "action" => "Hành động"
         ),
         "import_supplier_page" => array(
-            "import_supplier_management" => "Nhập Quản lý Nhà cung cấp",
-            "import_supplier" => "Nhập Nhà cung cấp",
-            "import_supplier_file" => "Nhập Tệp Nhà cung cấp",
+            "import_supplier_management" => "Nhập quản lý nhà cung cấp",
+            "import_supplier" => "Nhập nhà cung cấp",
+            "import_supplier_file" => "Nhập tệp nhà cung cấp",
             "import" => "Nhập"
         )
     ),
     "category_page" => array(
         "add_category_page" => array(
-            "add_categories_management" => "Thêm Quản lý Danh mục",
+            "add_categories_management" => "Thêm quản lý danh mục",
             "home" => "Trang chủ",
-            "add_categories" => "Thêm Danh mục",
+            "add_categories" => "Thêm danh mục",
+            "categories_name" => "Tên danh mục",
             "submit" => "Gửi"
         ),
         "manage_category_page" => array(
-            "View Fuel Categories" => "Xem Danh mục Nhiên liệu",
+            "view_fuel_categories" => "Xem danh mục nhiên liệu",
             "home" => "Trang chủ",
-            "Fuel Category Name" => "Tên Danh mục Nhiên liệu",
+            "fuel_category_name" => "Tên danh mục nhiên liệu",
+            "add_fuel_category" => "Thêm danh mục nguyên liệu",
+            "serial" => "Số Serial",
             "action" => "Hành động"
         )
     ),
 
     "customer_page" => array(
         "add_customer_page" => array(
-            "add_customer_management" => "Thêm Quản lý Khách hàng",
+            "add_customer_management" => "Thêm quản lý khách hàng",
             "home" => "Trang chủ",
-            "add_customer" => "Thêm Khách hàng",
-            "customer_name" => "Tên Khách hàng",
+            "add_customer" => "Thêm khách hàng",
+            "customer_name" => "Tên khách hàng",
             "email" => "Email",
             "phone" => "Điện thoại",
             "address" => "Địa chỉ",
+            "customer_email" => "Email khách hàng",
+            "customer_phone" => "Số điện thoại",
+            "customer_address" => "Địa chỉ khách hàng",
+            "active" => "Kích hoạt",
+            "inactive" => "Huỷ kích hoạt",
             "status" => "Trạng thái",
             "select" => "Chọn",
             "submit" => "Gửi"
         ),
         "manage_customer_page" => array(
-            "view_customer" => "Xem Khách hàng",
+            "view_customer" => "Xem khách hàng",
             "home" => "Trang chủ",
-            "add_customer" => "Thêm Khách hàng",
+            "add_customer" => "Thêm khách hàng",
             "serial" => "Số serial",
-            "customer_name" => "Tên Khách hàng",
+            "customer_name" => "Tên khách hàng",
             "email" => "Email",
             "phone" => "Điện thoại",
             "address" => "Địa chỉ",
@@ -149,17 +165,18 @@ return array(
 
     "invoice_page" => array(
         "add_invoice_page" => array(
-            "invoice_management" => "Quản lý Hóa đơn",
+            "invoice_management" => "Quản lý hóa đơn",
             "home" => "Trang chủ",
             "invoice" => "Hóa đơn",
-            "customer_name" => "Tên Khách hàng",
-            "customer_no" => "Số Khách hàng",
-            "customer_email" => "Email Khách hàng",
+            "customer_name" => "Tên khách hàng",
+            "select" => "Chọn",
+            "customer_no" => "Số khách hàng",
+            "customer_email" => "Email khách hàng",
             "date" => "Ngày",
             "invoice_no" => "Số hóa đơn",
             "address" => "Địa chỉ",
             "sr_no" => "Số thứ tự",
-            "select_service" => "Chọn Dịch vụ",
+            "select_service" => "Chọn dịch vụ",
             "quantity" => "Số lượng",
             "sale_price" => "Giá bán",
             "total" => "Tổng",
@@ -170,9 +187,9 @@ return array(
             "submit" => "Gửi"
         ),
         "manage_invoice_page" => array(
-            "view_order" => "Xem Đơn hàng",
+            "view_order" => "Xem đơn hàng",
             "home" => "Trang chủ",
-            "add_order" => "Thêm Đơn hàng",
+            "add_order" => "Thêm đơn hàng",
             "build_date" => "Ngày tạo",
             "invoice_no" => "Số hóa đơn",
             "customer_no" => "Số khách hàng",
@@ -186,25 +203,28 @@ return array(
 
     "report_page" => array(
         "order_report_page" => array(
-            "datewise_sales_report_management" => "Quản lý Báo cáo Bán hàng theo ngày",
-            "sales_report" => "Báo cáo Bán hàng",
+            "datewise_sales_report_management" => "Quản lý báo cáo bán hàng theo ngày",
+            "sales_report" => "Báo cáo bán hàng",
             "home" => "Trang chủ",
             "start_date" => "Ngày bắt đầu",
             "end_date" => "Ngày kết thúc",
+            "search" => "Tìm kiếm",
             "serial" => "Số serial",
-            "customer_name" => "Tên Khách hàng",
-            "customer_no" => "Số Khách hàng",
-            "customer_email" => "Email Khách hàng",
+            "customer_name" => "Tên khách hàng",
+            "customer_no" => "Số khách hàng",
+            "customer_email" => "Email khách hàng",
             "address" => "Địa chỉ",
             "sale_price" => "Giá bán",
             "email" => "Email",
             "subtotal" => "Tổng phụ",
-            "final Total" => "Tổng cuối",
+            "final_total" => "Tổng cuối",
             "gst" => "Thuế GST",
-            "discount" => "Chiết khấu"
+            "discount" => "Chiết khấu",
+            "created_date" => "Ngày tạo",
+            "action" => "Hành động",
+
         )
-    ),
+    )
 );
 
 ?>
-
