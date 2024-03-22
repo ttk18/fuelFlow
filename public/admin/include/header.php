@@ -32,8 +32,8 @@
 
 include "../assets/constant/config.php";
 
-// Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
+// Author Name: Mayuri K.
+// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
 // Visit website : www.mayurik.com
 
 try {
@@ -54,11 +54,6 @@ foreach ($record as $key) {
 
     <nav  class="navbar-custom">
       <div class="marquee-container" style="margin-top: 20px;" onmouseover="stopMarquee(this)" onmouseout="startMarquee(this)">
-        <!-- <div style="display:none" class="marquee-content">
-          <span style="color: red;">
-            <center><strong><b>Alert : I am providing this source code for Educational Purpose only. Don't Sale or Publish this script with your name. However you can use it for study Purpose !</b></strong></center>
-          </span>
-        </div> -->
       </div>
 
 

@@ -1,9 +1,7 @@
 <?php
 session_start();
 include '../assets/constant/config.php';
-// Author Name: Mayuri K. 
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com -->  
+
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -16,7 +14,6 @@ try {
 <!-- Top Bar End -->
 <?php include('include/header.php'); ?>
 <div class="page-content-wrapper ">
-
 
 
     <div class="row tittle">
@@ -34,12 +31,9 @@ try {
     </div>
 
 
-
     <div class="container-fluid">
         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
+
             <div class="col-lg-8" style="margin-left: 10%;">
                 <div class="card">
                     <div class="card-body">
@@ -51,12 +45,11 @@ try {
 
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
+
                                             <label class="col-sm-3 control-label">Categories Name</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="name" placeholder="Categories Name" name="name">
+                                                <input type="text" class="form-control" id="name"
+                                                       placeholder="Categories Name" name="name">
                                             </div>
                                         </div>
                                     </div>
@@ -64,13 +57,13 @@ try {
 
                                     <div class="form-group col-md-12">
 
-                                        <button class="btn btn-primary" type="submit" name="submit" onclick="validateSupplier()">Submit</button>
+                                        <button class="btn btn-primary" type="submit" name="submit"
+                                                onclick="validateSupplier()">Submit
+                                        </button>
 
                                     </div>
                                 </form>
                             </div>
-
-
 
 
                         </div>
@@ -87,21 +80,18 @@ try {
 <script>
     function validateSupplier() {
         // Custom method to check if the input contains only spaces
-// Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com 
 
-        $.validator.addMethod("noSpacesOnly", function(value, element) {
+        $.validator.addMethod("noSpacesOnly", function (value, element) {
             return value.trim() !== '';
         }, "Please enter a non-empty value");
 
         // Custom method to check if the input contains only alphabet characters
-        $.validator.addMethod("lettersonly", function(value, element) {
+        $.validator.addMethod("lettersonly", function (value, element) {
             return /^[a-zA-Z\s]*$/.test(value);
         }, "Please enter alphabet characters only");
 
         // Custom method to check if the input contains only digits
-        $.validator.addMethod("noDigits", function(value, element) {
+        $.validator.addMethod("noDigits", function (value, element) {
             return !/\d/.test(value);
         }, "Please enter a value without digits");
 

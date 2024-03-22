@@ -1,9 +1,7 @@
 <?php
 session_start();
 include '../../assets/constant/config.php';
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
+
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -27,9 +25,6 @@ try {
 
         header("location:../manage_fuel.php");
     }
-   // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
 
 
     if (isset($_POST['del_id'])) {
@@ -44,6 +39,3 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . htmlspecialchars($e->getMessage());
 }
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com

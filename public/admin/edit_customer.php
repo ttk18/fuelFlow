@@ -1,9 +1,7 @@
 <?php
 session_start();
 include '../assets/constant/config.php';
-// Author Name: Mayuri K. 
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com -->  
+
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -31,12 +29,8 @@ try {
     </div>
 
 
-
     <div class="container-fluid">
         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
             <div class="col-lg-8" style="margin-left: 10%;">
                 <div class="card">
                     <div class="card-body">
@@ -53,70 +47,72 @@ try {
                                     $record = $stmt->fetchAll();
 
                                     foreach ($record as $key) {
-                                    ?>
+                                        ?>
 
-                                        <input class="form-control" type="hidden" name="id" value="<?php echo $key['id']; ?>">
+                                        <input class="form-control" type="hidden" name="id"
+                                               value="<?php echo $key['id']; ?>">
                                         <div class="form-group">
                                             <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
                                                 <label class="col-sm-3 control-label">Customer Name</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" id="brandName" placeholder="customer Name" value="<?php echo $key['brandName'] ?>" name="brandName">
+                                                    <input type="text" class="form-control" id="brandName"
+                                                           placeholder="customer Name"
+                                                           value="<?php echo $key['brandName'] ?>" name="brandName">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
                                                 <label class="col-sm-3 control-label">Email</label>
                                                 <div class="col-sm-9">
-                                                    <input type="email" class="form-control" id="customerEmail" placeholder="customer Email" value="<?php echo $key['customerEmail'] ?>" name="customerEmail">
+                                                    <input type="email" class="form-control" id="customerEmail"
+                                                           placeholder="customer Email"
+                                                           value="<?php echo $key['customerEmail'] ?>"
+                                                           name="customerEmail">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
                                                 <label class="col-sm-3 control-label">Phone</label>
                                                 <div class="col-sm-9">
-                                                    <input type="tel" class="form-control" id="customerPhone" placeholder="customer Phone" value="<?php echo $key['customerPhone'] ?>" name="customerPhone">
+                                                    <input type="tel" class="form-control" id="customerPhone"
+                                                           placeholder="customer Phone"
+                                                           value="<?php echo $key['customerPhone'] ?>"
+                                                           name="customerPhone">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
                                                 <label class="col-sm-3 control-label">Address</label>
                                                 <div class="col-sm-9">
-                                                    <textarea class="form-control" id="customerAddress" placeholder="customer Address" name="customerAddress"> <?php echo $key['customerAddress'] ?></textarea>
+                                                    <textarea class="form-control" id="customerAddress"
+                                                              placeholder="customer Address"
+                                                              name="customerAddress"> <?php echo $key['customerAddress'] ?></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
                                                 <label class="col-sm-3 control-label">Status</label>
                                                 <div class="col-sm-9">
                                                     <select class="form-control" id="brandStatus" name="brandStatus">
                                                         <option value="">~~SELECT~~</option>
-                                                        <option value="Active" <?php if ($key['brandStatus'] == 'Active') echo 'selected="selected"'; ?>>Active</option>
-                                                        <option value="Inactive" <?php if ($key['brandStatus'] == 'Inactive') echo 'selected="selected"'; ?>>Inactive</option>
+                                                        <option value="Active" <?php if ($key['brandStatus'] == 'Active') echo 'selected="selected"'; ?>>
+                                                            Active
+                                                        </option>
+                                                        <option value="Inactive" <?php if ($key['brandStatus'] == 'Inactive') echo 'selected="selected"'; ?>>
+                                                            Inactive
+                                                        </option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <button class="btn btn-primary" type="submit" name="update" onclick="validatecustomer()">Submit</button>
+                                            <button class="btn btn-primary" type="submit" name="update"
+                                                    onclick="validatecustomer()">Submit
+                                            </button>
                                         </div>
 
                                     <?php } ?>
@@ -136,21 +132,20 @@ try {
 <?php include('include/footer.php'); ?>
 
 
-
 <script>
     function validatecustomer() {
         // Custom method to check if the input contains only spaces
-        $.validator.addMethod("noSpacesOnly", function(value, element) {
+        $.validator.addMethod("noSpacesOnly", function (value, element) {
             return value.trim() !== '';
         }, "Please enter a non-empty value");
 
         // Custom method to check if the input contains only alphabet characters
-        $.validator.addMethod("lettersonly", function(value, element) {
+        $.validator.addMethod("lettersonly", function (value, element) {
             return /^[a-zA-Z\s]*$/.test(value);
         }, "Please enter alphabet characters only");
 
         // Custom method to check if the input contains only digits
-        $.validator.addMethod("noDigits", function(value, element) {
+        $.validator.addMethod("noDigits", function (value, element) {
             return !/\d/.test(value);
         }, "Please enter a value without digits");
 

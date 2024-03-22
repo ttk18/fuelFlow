@@ -1,9 +1,6 @@
 <?php
 session_start();
 include '../assets/constant/config.php';
-// Author Name: Mayuri K. 
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com -->  
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -37,9 +34,6 @@ try {
 
   <div class="container-fluid">
     <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
       <div class="col-lg-11" style="margin-left: 10%;">
         <div class="card">
           <div class="card-body">

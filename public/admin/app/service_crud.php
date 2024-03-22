@@ -7,9 +7,6 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if (isset($_POST['submit'])) {
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
         $filepath = "../../assets/images/" . htmlspecialchars($_FILES["photo"]["name"]);
 
         if (move_uploaded_file($_FILES["photo"]["tmp_name"], $filepath)) {
@@ -34,12 +31,10 @@ try {
         $stmt->execute([htmlspecialchars($_POST['heading']), htmlspecialchars($_POST['shortcontent']), htmlspecialchars($_POST['content']), $img, $img1, htmlspecialchars($_POST['metatitle']), htmlspecialchars($_POST['metadescription']), htmlspecialchars($_POST['keywords']), htmlspecialchars($_POST['robots'])]);
 
 
-
         $_SESSION['success'] = "success";
 
         header("location:../manage_manufacturer.php");
     }
-
 
 
     if (isset($_POST['update'])) {
@@ -57,9 +52,6 @@ try {
         } else {
             $img = htmlspecialchars($_POST['old_photo_img']);
         }
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
         if ($_FILES['banner']['tmp_name'] != '') {
             $file_extension = pathinfo($_FILES["banner"]["name"], PATHINFO_EXTENSION);
             $new_filename = uniqid() . '.' . $file_extension;
@@ -83,7 +75,6 @@ try {
 
 
     if (isset($_GET['id'])) {
-
 
 
         $stmt = $conn->prepare("UPDATE `service` SET delete_status='1' where id=? ");

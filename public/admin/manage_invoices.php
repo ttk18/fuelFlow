@@ -1,9 +1,6 @@
 <?php
 session_start();
 include '../assets/constant/config.php';
-// Author Name: Mayuri K. 
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com -->  
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -36,9 +33,7 @@ try {
     <!-- end page title end breadcrumb -->
 
     <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
+
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body">

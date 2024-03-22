@@ -29,13 +29,10 @@
 27. Calendar
 28. Widgets
 29. Maps
-30. Account pages 
-31. Responsive 
+30. Account pages
+31. Responsive
 */@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 /* ==============
-// Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
 ===================*/
 body {
   background: #eff3f6;
@@ -1098,7 +1095,7 @@ background-size: 20%; /* Adjust the percentage as needed */
   border: 1px solid #0671b1;
   color: #ffffff;
   -webkit-box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
-   box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2); 
+   box-shadow: 0 14px 26px -12px rgba(116, 96, 238, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(116, 96, 238, 0.2);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -3061,7 +3058,7 @@ border: 1px solid #102b49 !important;
 }*/
 .error {
       color: red;
-    
+
    }
 .parsley-error {
   border-color: #ec536c;

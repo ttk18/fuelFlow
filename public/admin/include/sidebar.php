@@ -176,38 +176,6 @@ as $key1) { ?>
 
                         </ul>
                     </li>
-                    <!--    // Author Name: Mayuri K.
-                  // for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com
-                  // Visit website : www.mayurik.com -->
-                    <!--    <li>
-                           <a href="https://www.mayurik.com/#mayuri_section" class="waves-effect" target="_blank">
-                               <i class="fa fa-group-arrows-rotate"></i>
-                               <span>About Author</span>
-                           </a>
-                       </li>
-
-
-                       <li>
-                           <a href="web.php" class="waves-effect">
-                               <i class="fa fa-cog"></i>
-                               <span>Web Appearance</span>
-                           </a>
-                       </li>
-
-                       <li>
-                           <a href="https://www.mayurik.com/source-code/P3584/best-petrol-pump-management-software"
-                              class="waves-effect" target="_blank">
-                               <i class="fa fa-download"></i>
-                               <span><b>Download Pro Ver.</b></span>
-                           </a>
-                       </li>
-                       <li>
-                           <a href="https://www.youtube.com/@MayuriK/videos" class="waves-effect" target="_blank">
-                               <i class="fa fa-book"></i>
-                               <span><b>Projects</b></span>
-                           </a>
-                       </li>
-                -->
                 </ul>
             </div>
             <div class="clearfix"></div>

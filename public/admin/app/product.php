@@ -5,9 +5,7 @@ include '../../assets/constant/config.php';
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
+
     if (isset($_POST['submit'])) {
 
         $filepath = "../../assets/images/" . htmlspecialchars($_FILES["photo"]["name"], ENT_QUOTES);
@@ -30,14 +28,9 @@ try {
 
 
         $stmt = $conn->prepare("INSERT INTO `product`(`heading`, `shortcontent`, `content`,`photo`, `banner`,`metatitle`,`metadescription`,`keywords`,`robots`) VALUES (?,?,?,?,?,?,?,?,?)");
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
+
         $stmt->execute([htmlspecialchars($_POST['heading'], ENT_QUOTES), htmlspecialchars($_POST['shortcontent'], ENT_QUOTES), htmlspecialchars($_POST['content'], ENT_QUOTES), $img, $img1, htmlspecialchars($_POST['metatitle'], ENT_QUOTES), htmlspecialchars($_POST['metadescription'], ENT_QUOTES), htmlspecialchars($_POST['keywords'], ENT_QUOTES), htmlspecialchars($_POST['robots'], ENT_QUOTES)]);
 
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
 
         $_SESSION['success'] = "success";
 
@@ -100,6 +93,3 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . htmlspecialchars($e->getMessage(), ENT_QUOTES);
 }
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com

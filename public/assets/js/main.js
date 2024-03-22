@@ -1,8 +1,4 @@
-/**
-// Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
-*/
+
 (function() {
   "use strict";
 
@@ -33,7 +29,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -204,7 +200,7 @@
   });
 
   /**
-   * Initiate Insurances Lightbox 
+   * Initiate Insurances Lightbox
    */
   const insurancesLightbox = GLightbox({
     selector: '.insurances-lightbox'
@@ -240,7 +236,7 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
    new PureCounter();
 

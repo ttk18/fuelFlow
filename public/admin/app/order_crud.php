@@ -4,9 +4,6 @@
 session_start();
 include '../../assets/constant/config.php';
 
-   // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -27,7 +24,7 @@ try {
         $stmt->bindParam(':gst_rate', $_POST['gst_rate']);
 
         $stmt->bindParam(':subtotal', $_POST['subtotal']);
-        // $stmt->bindParam(':added_date', date('Y-m-d')); 
+        // $stmt->bindParam(':added_date', date('Y-m-d'));
         $stmt->bindParam(':final_total', $_POST['final_total']);
 
 

@@ -1,8 +1,4 @@
-/*!
- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
-  */
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery')) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery'], factory) :

@@ -1,14 +1,11 @@
-<?php 
+<?php
 session_start();
  include '../../assets/constant/config.php';
-      // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
  try {
 		$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
-		if (isset($_POST['submit'])) 
+
+		if (isset($_POST['submit']))
 		{
 
 			$uploadDir = '../../assets/images/';
@@ -29,9 +26,7 @@ session_start();
             } else {
                 echo 'There was an error uploading the file.';
             }
-        }     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
+        }
 
         // Handle banner file upload
         if ($_FILES['photos']['tmp_name'] != '') {
@@ -52,23 +47,23 @@ session_start();
                 echo 'There was an error uploading the file.';
             }
         }
-			
-		
+
+
 
 //echo "INSERT INTO `manage_web`(`photo1`,`photos`) VALUES ('".$img."','".$img1."')";exit;
 			$stmt = $conn->prepare("INSERT INTO `manage_web`(`photo1`,`photos`) VALUES ('".$img."','".$img1."')");
 
 			$stmt->execute();
-			
-			
-			$_SESSION['success']="success";
-		
 
-			header("location:../web.php" ); 
+
+			$_SESSION['success']="success";
+
+
+			header("location:../web.php" );
 
 		}
-	
-	
+
+
 
 		if (isset($_POST['update'])) {
     function generateUniqueFilename($file) {
@@ -86,9 +81,7 @@ session_start();
         }
     } else {
         $img = $_POST['old_photo1_img'];
-    }     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
+    }
 
     if ($_FILES['photos']['tmp_name'] != '') {
         $img1 = generateUniqueFilename($_FILES['photos']);
@@ -119,10 +112,6 @@ session_start();
 }
 
 
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
-
 		if (isset($_POST['update1'])) {
     if ($_FILES['photo2']['tmp_name'] != '') {
         $file_extension = pathinfo($_FILES['photo2']['name'], PATHINFO_EXTENSION);
@@ -149,10 +138,6 @@ session_start();
     $_SESSION['update'] = "update";
     header("location:../web.php");
 }
-
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
 
 
 		if (isset($_POST['update2'])) {
@@ -219,18 +204,18 @@ session_start();
 }
 
 
-		if (isset($_POST['update3'])) 
+		if (isset($_POST['update3']))
 		{
 
 				$stmt = $conn->prepare("UPDATE `emailsetting` SET `encryption`='".$_POST['encryption']."',`host`='".$_POST['host']."',`port`='".$_POST['port']."',`username`='".$_POST['username']."',`password`='".$_POST['password']."',`email`='".$_POST['email']."' WHERE id='".$_POST['id']."' ");
 
 		      $stmt->execute();
-			
+
 			$_SESSION['update'] = "update";
-			header("location:../web.php" ); 
+			header("location:../web.php" );
 
 		}
-	
+
 		if (isset($_POST['update4'])) {
     $stmt = $conn->prepare("UPDATE `sidebarfooter` SET `rpost`=:rpost, `ppost`=:ppost, `recentpost`=:recentpost, `popularpost`=:popularpost WHERE id=:id");
     $stmt->bindParam(':rpost', $_POST['rpost']);
@@ -248,10 +233,7 @@ if (isset($_POST['update5'])) {
         $file_extension = pathinfo($file['name'], PATHINFO_EXTENSION);
         $unique_filename = uniqid() . '.' . $file_extension;
         return $unique_filename;
-    }
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
+
     if ($_FILES['photo']['tmp_name'] != '') {
         $img = generateUniqueFilename($_FILES['photo']);
         $filepath = "../../assets/images/" . $img;
@@ -272,10 +254,7 @@ if (isset($_POST['update5'])) {
         }
     } else {
         $img1 = $_POST['old_photo1_img'];
-    }
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
+
     if ($_FILES['photo2']['tmp_name'] != '') {
         $img2 = generateUniqueFilename($_FILES['photo2']);
         $filepath = "../../assets/images/" . $img2;
@@ -361,9 +340,6 @@ if (isset($_POST['update5'])) {
     header("location:../web.php");
 }
 
-     // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com
 
 			if (isset($_POST['update6'])) {
     // Function to generate unique file name
@@ -559,22 +535,22 @@ if (isset($_POST['update5'])) {
 
 
 
-		if (isset($_GET['id'])) 
+		if (isset($_GET['id']))
 		{
 
 
 			$stmt = $conn->prepare("UPDATE `manage_web` SET delete_status='1' where id='".$_GET['id']."' ");
 
 			$stmt->execute();
-			
+
 
 			$_SESSION['delete']="delete";
 
-			header("location:../web.php" ); 
+			header("location:../web.php" );
 
 		}
 
-			if (isset($_POST['update8'])) 
+			if (isset($_POST['update8']))
 		{
 
 
@@ -584,7 +560,7 @@ if (isset($_POST['update5'])) {
 
 			$stmt->execute();
 			$_SESSION['update']="update";
-			header("location:../web.php" ); 
+			header("location:../web.php" );
 
 		}
 

@@ -1,12 +1,6 @@
 <?php
 session_start();
 include '../assets/constant/config.php';
-// Author Name: Mayuri K. 
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com -->  
-// Author Name: Mayuri K. 
-//  for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com -->  
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -31,9 +25,7 @@ try {
     </div>
     <div class="container-fluid">
         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
+
             <div class="col-lg-8" style="margin-left: 10%;">
                 <div class="card">
                     <div class="card-body">
@@ -42,53 +34,48 @@ try {
                                 <form id="add_brand" method="POST" action="app/customer_crud.php">
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
+
                                             <label class="col-sm-3 control-label">Customer Name</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="brandName" placeholder="customer Name" name="brandName">
+                                                <input type="text" class="form-control" id="brandName"
+                                                       placeholder="customer Name" name="brandName">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
+
                                             <label class="col-sm-3 control-label">Email</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="customerEmail" placeholder="customer Email" name="customerEmail">
+                                                <input type="email" class="form-control" id="customerEmail"
+                                                       placeholder="customer Email" name="customerEmail">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
+
                                             <label class="col-sm-3 control-label">Phone</label>
                                             <div class="col-sm-9">
-                                                <input type="tel" class="form-control" id="customerPhone" placeholder="customer Phone" name="customerPhone">
+                                                <input type="tel" class="form-control" id="customerPhone"
+                                                       placeholder="customer Phone" name="customerPhone">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
+
                                             <label class="col-sm-3 control-label">Address</label>
                                             <div class="col-sm-9">
-                                                <textarea class="form-control" id="customerAddress" placeholder="customer Address" name="customerAddress"></textarea>
+                                                <textarea class="form-control" id="customerAddress"
+                                                          placeholder="customer Address"
+                                                          name="customerAddress"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
-        <!-- // Author Name: Mayuri K. 
-// for any PHP, Codeignitor, Laravel OR Python work contact me at mayuri.infospace@gmail.com  
-// Visit website : www.mayurik.com  -->
+
                                             <label class="col-sm-3 control-label">Status</label>
                                             <div class="col-sm-9">
                                                 <select class="form-control" id="brandStatus" name="brandStatus">
@@ -100,7 +87,9 @@ try {
                                         </div>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <button class="btn btn-primary" type="submit" name="submit" onclick="validatecustomer()">Submit</button>
+                                        <button class="btn btn-primary" type="submit" name="submit"
+                                                onclick="validatecustomer()">Submit
+                                        </button>
                                     </div>
                                 </form>
                             </div>
@@ -117,17 +106,17 @@ try {
 <script>
     function validatecustomer() {
         // Custom method to check if the input contains only spaces
-        $.validator.addMethod("noSpacesOnly", function(value, element) {
+        $.validator.addMethod("noSpacesOnly", function (value, element) {
             return value.trim() !== '';
         }, "Please enter a non-empty value");
 
         // Custom method to check if the input contains only alphabet characters
-        $.validator.addMethod("lettersonly", function(value, element) {
+        $.validator.addMethod("lettersonly", function (value, element) {
             return /^[a-zA-Z\s]*$/.test(value);
         }, "Please enter alphabet characters only");
 
         // Custom method to check if the input contains only digits
-        $.validator.addMethod("noDigits", function(value, element) {
+        $.validator.addMethod("noDigits", function (value, element) {
             return !/\d/.test(value);
         }, "Please enter a value without digits");
 
